@@ -1,0 +1,58 @@
+<div class="row" style="margin-top:10px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="text-center">
+            <div class="alert alert-brown" role="alert">
+                Burası Giriş Ekranı
+              </div>
+            </div>  
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  
+<section  class="container-fluid align-center animated  sec-pad">
+  <div class="row">
+      <div class="col-md-3"></div>
+    <div class="col-md-6 formStyle">
+        <form name="contactform"  method="post" class="row form-horizontal" role="form">
+            <div class="form-group input--hoshi col-sm-12">
+              <div class="input-wrap">
+                <input autocomplete="off" type="email" class="form-control input__field input input__field--hoshi" id="email" name="email" placeholder="Mail Adresiniz" required>
+                <label class="input__label input__label input__label--hoshi input__label--hoshi-color-1 input__label--hoshi input__label--hoshi-color-1" ></label>
+              </div>	
+            </div>
+            <div class="form-group  input--hoshi col-sm-12" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+              <div class="input-wrap">
+                <input autocomplete="off" type="password" class="form-control input input__field input__field--hoshi" placeholder="Şifreniz" id="password" name="password" required>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
+              </div>	
+            </div>
+            <div class="form-group col-sm-12" >
+              <a style="color:#c29f75" routerLink="/home/sifremi-unuttum">Şifremi Unuttum..</a>
+            </div>
+            <div class="form-group col-sm-12">
+              <div class="row">
+
+                  <div class="col-sm-12" style="padding-bottom:10px;">
+                      <button type="submit" class="btn btn-default btn-block">
+                          <span class="mask"></span>
+                          <span class="btn-label">GİRİŞ</span>
+                          </button>
+                  </div>
+
+                <div class="col-sm-12" >
+                    <a routerLink="/home"><button type="submit" class="btn btn-default btn-block">
+                        <span class="mask"></span>
+                        <span class="btn-label">GERİ DÖN</span>
+                        </button></a>
+                </div>
+                
+              </div>
+            </div>
+          </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  
+
+</section>
